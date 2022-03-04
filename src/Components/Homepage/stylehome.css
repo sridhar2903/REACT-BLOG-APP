@@ -283,12 +283,12 @@ font-weight: bolder;
 }
 
 
-@media only screen and (min-width:2560px)
+@media only screen and (min-width:2000px)
 {
     .homebody
     {
-        margin-left: 40em;
-        margin-right: 40em;
+        margin-left: 23em;
+        margin-right: 23em;
        
     }
 }
