@@ -188,7 +188,7 @@ font-weight: bolder;
 #container-latest-article
 {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     
 }
 
@@ -287,8 +287,8 @@ font-weight: bolder;
 {
     .homebody
     {
-        margin-left: 20em;
-        margin-right: 20em;
+        margin-left: 40em;
+        margin-right: 40em;
        
     }
 }
