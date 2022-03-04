@@ -18,7 +18,7 @@ const latesttwo = {
 }
 
 const latestthree = {
-  image: <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/paneer-tikka-restaurant-style.jpg" id="ptikka" alt='notfound'/>,
+  image: <img src="https://thebellyrulesthemind.net/wp-content/uploads/2019/12/Air-Fryer-Tandoori-Paneer-Tikka-7-720x405.png" id="ptikka" alt='notfound'/>,
   title: "Paneer Tikka",
   info: "Paneer Tikka is a popular and delicious tandoori snack where paneer (Indian cottage cheese cubes) are marinated in a spiced yogurt-based marinade, arranged on skewers and grilled in the oven.",
   subinfo: <div id="sub-three" ><b>Food</b> / January 10, 2022 </div>
