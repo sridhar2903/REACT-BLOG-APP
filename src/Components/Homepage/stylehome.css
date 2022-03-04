@@ -68,8 +68,8 @@ font-weight: bolder;
 .flexlatest
 {
     display: flex;
-   justify-content:center;
-   gap:6px;
+  
+   gap:10px;
     
 }
 
@@ -141,7 +141,7 @@ font-weight: bolder;
    padding-top: 38px;
 }
 
-#latestarticle-home-title
+.latestarticle-home-title
 {
     font-family: 'Montserrat', sans-serif;
    
@@ -183,21 +183,68 @@ font-weight: bolder;
    float: left;
 }
 
+/* LATEST -ARTICLE-HOME */
+
+#container-latest-article
+{
+    display: flex;
+    gap: 5px;
+    
+}
+
+#imglatest
+{
+    width: 300px;
+    height: 250px;
+}
+
+#title-latest-one
+{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title-latest-two
+{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2em;
+    
+    
+
+}
+#title-latest-three
+{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+     padding-top: 3.5em;
+}
 
 
+/*ADVERTISEMENT  */
+#adv
+{
+    height: 500px;
+    width: 400px;
+    border: 2px solid black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11em ;
+}
 
+#floatadv-home
+{
+    float: right;
+    position: relative;
+    bottom: 23em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.flexlateststories
+{
+    display: flex;
+    gap: 10px;
+}
 
 
 

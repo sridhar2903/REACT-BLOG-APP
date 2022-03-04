@@ -9,8 +9,6 @@ const TopPostsDetails = ({datapost}) => {
                  </div>
                  <div id="title-container-posts">
                      {datapost.titletext}
-                    
-                     
                          {datapost.maintitle}
                          </div> 
      
