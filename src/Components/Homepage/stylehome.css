@@ -146,7 +146,7 @@ font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
    
 }
-#top-posts-article
+.top-posts-article
 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -165,13 +165,13 @@ font-weight: bolder;
 }
 #title-container-posts
 {
-    font-size: 20px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 2.2em;
+    padding-top: 2.5em;
 
 }
 
-#top-post-home
+.top-post-home
 {
     float: right;
 }
@@ -194,7 +194,7 @@ font-weight: bolder;
 
 #imglatest
 {
-    width: 300px;
+    width: 350px;
     height: 250px;
 }
 
@@ -208,7 +208,7 @@ font-weight: bolder;
 {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 2em;
+    padding-top: 0.2em;
     
     
 
@@ -233,7 +233,7 @@ font-weight: bolder;
     padding-top: 11em ;
 }
 
-#floatadv-home
+.floatadv-home
 {
     float: right;
     position: relative;
@@ -283,12 +283,3 @@ font-weight: bolder;
 }
 
 
-@media only screen and (min-width:2000px)
-{
-    .homebody
-    {
-        margin-left: 23em;
-        margin-right: 23em;
-       
-    }
-}

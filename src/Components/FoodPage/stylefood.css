@@ -1,0 +1,29 @@
+.foodbody
+{
+    margin-left: 40px;
+    margin-right: 40px;
+   
+   
+
+}
+.floatadv-food
+{
+    float: right;
+    position: relative;
+    bottom: 23em;
+    margin-bottom: -20em;
+}
+
+
+
+/* MEDIA QUERY FOR 1920 RESOLUTION ONLY */
+@media only screen and (min-width:1920px)
+{
+    .foodbody
+    {
+        margin-left: 20em;
+        margin-right: 20em;
+       
+       
+    }
+}
