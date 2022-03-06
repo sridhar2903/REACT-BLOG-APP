@@ -2,7 +2,7 @@ import React from 'react'
 import './stylearticles.css'
 import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
-import share from './imagesarticles/likes.jpg'
+import share from './imagesarticles/share.jpg'
 import { Link } from 'react-router-dom'
 
 const PalakPaneer = () => {
