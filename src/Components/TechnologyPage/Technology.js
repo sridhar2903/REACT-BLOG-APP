@@ -2,6 +2,7 @@ import React from 'react'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
+import { Link } from 'react-router-dom'
 import './styletechnology.css'
 // OBJECTS RELATED TO TOP POST DETAILS IN HOME PAGE
 
@@ -109,11 +110,21 @@ const Technology = () => {
           <br />
 
           <div  >
+          <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
+            </Link>
+            <Link to="/artificialintelligence" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
+            </Link>
+            <Link to="/blockchaintechnology" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
+            </Link>
+            <Link to="/cryptography" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
+            </Link>
+            <Link to="/iot" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
+            </Link>
 
           </div>
 
@@ -123,12 +134,21 @@ const Technology = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-
+          <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
+          </Link>
+          <Link to="/artificialintelligence" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
+          </Link>
+          <Link to="/blockchaintechnology" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
+          </Link>
+          <Link to="/cryptography" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
+          </Link>
+          <Link to="/iot" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
+          </Link>
         </div>
 
 

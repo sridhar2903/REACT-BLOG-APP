@@ -4,7 +4,7 @@ import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+const Flexibility = () => {
   return (
     <>
 
@@ -13,18 +13,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>FLEXIBILITY</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src="https://d32ydbgkw6ghe6.cloudfront.net/production/uploads/cover_images/830bb47e9d6dca4026ab8eba425e4945bb55/i1080x475.jpg" className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>11k</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,13 +33,7 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
-
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
-
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
+        Flexibility training is stretching—lengthening and loosening muscles and connective tissues to improve flexibility. You probably know what it means when someone says they are flexible. It usually means that they can reach down and touch their toes or bend deeply into a squat. But the definition of flexibility is more complicated than simply being able to do a single stretch. True flexibility is the ability to move through a range of motion without pain.That means that each joint and each group of muscles in your body might have a different range of motion (ROM) or a different level of flexibility. Range of motion is a measurement of how much a joint can move, both in terms of distance and direction. Along with other factors, your muscles' ability to relax or contract affects your range of motion. If your muscles are inflexible, then your range of motion could be less than it should be.
 
         </div>
 
@@ -51,7 +45,7 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+              11k
             </div>
           </div>
 
@@ -99,8 +93,8 @@ const Aerobic = () => {
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-
         <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src=" https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgfooter' alt='notfound' />,
@@ -122,13 +116,13 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
+
           </div>
           </Link>
 
           {/* SECOND -CHILD -FOOTER */}
-           
           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -152,8 +146,9 @@ const Aerobic = () => {
             </div>
 
           </div>
+          </Link>
 
-         </Link>
+
 
 
 
@@ -185,9 +180,8 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
 
-
+</Link>
         </div>
 
 
@@ -228,4 +222,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default Flexibility

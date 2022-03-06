@@ -24,6 +24,7 @@
    border-radius: 10px;
 
 }
+
 .center-one-img
 {
     font-family: 'Montserrat', sans-serif;
@@ -34,6 +35,7 @@ padding-top: 25%;
 font-weight: bolder;
 
 }
+
 .sub-text-one-img
 {
     font-size: 18px;
@@ -41,14 +43,14 @@ font-weight: bolder;
 
 #two-img
 {
-    background-image: url("./imagesforHome/gym.jpg");
+    background-image: url("https://www.mensjournal.com/wp-content/uploads/mf/1280-run-track-sprint-shuttle.jpg?w=900&h=506&crop=1&quality=86&strip=all");
     background-size: cover;
     border-radius: 10px;
   
 }
 #three-img
 {
- background-image: url("./imagesforHome/technology.jpg");
+ background-image: url("https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used.jpg");
  background-size: cover;
  border-radius: 10px;
   

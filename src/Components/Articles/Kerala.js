@@ -3,8 +3,9 @@ import './stylearticles.css'
 import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
+import kerala from './kerala.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+const Kerala = () => {
   return (
     <>
 
@@ -13,18 +14,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>KERALA</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src={kerala} className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>20K</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,14 +34,7 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
-
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
-
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
-
+        National Geographic's Traveller magazine listed Kerala in the 'Ten Paradises of the World' and '50 must visit places of a lifetime'. Being a coastal region rich in greenery and with a unique culture, the state has attracted tourists from across the globe since time immemorial. But more often than not, tourists are finding themselves grappling with situations wherein they are unable to choose their destinations or struggle to get proper accommodation owing to shortage of local information and such other hassles.Known for the scenic beauty, natural beauty and other attractions, Kerala tourism never had to look back ever in its growth. Kerala is known for its densely forested mountain ranges comprising the Western Ghats and covering tropical evergreen, deciduous and semi-deciduous jungles that are home to some rare, exotic plant life and wildlife species. These hill stations and high range zones are the favourite haunts of nature and wildlife enthusiasts.
         </div>
 
 
@@ -51,12 +45,12 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+              20K
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Fitness </span>
+            <span className='title-background'>Tourism </span>
 
           </div>
           <br />
@@ -122,13 +116,13 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
+
           </div>
           </Link>
 
           {/* SECOND -CHILD -FOOTER */}
-           
           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -152,8 +146,9 @@ const Aerobic = () => {
             </div>
 
           </div>
+          </Link>
 
-         </Link>
+
 
 
 
@@ -164,7 +159,7 @@ const Aerobic = () => {
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2017/04/paneer-butter-masala-recipe-step-by-step-instructions.jpg?fit=2592%2C1944&quality=65&strip=all&ssl=1" className='imgfooter' alt='notfound' />,
-            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala </h2>
+            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala</h2>
 
 
 
@@ -185,9 +180,8 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
 
-
+</Link>
         </div>
 
 
@@ -228,4 +222,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default Kerala

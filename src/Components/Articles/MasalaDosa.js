@@ -4,7 +4,9 @@ import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+
+
+const MasalaDosa = () => {
   return (
     <>
 
@@ -13,18 +15,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>MASALA DOSA</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src="http://www.yummyfoodrecipes.in/resources/picture/org/Karnataka-Style-Masala-Dosa.jpg" className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>150k</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,14 +35,11 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
+        Masala dosa are crispy, soft, savory and healthy crepes made with a rice and lentil batter. The dosa are gluten-free and dairy-free, with a sturdy yet soft texture that’s great for holding a hearty homemade potato filling.To make the batter, lentils and rice are soaked for several hours and then blended together. This makes a creamy and smooth batter. This rice and lentil batter is fermented overnight to create just the right tangy flavor and tender, light crepes.
 
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
+Dosa Batter is quickly cooked like a thin pancake on a hot griddle, with your choice of oil or butter or ghee. The crepe is then filled with a spiced potato and onion filling, and served with Sambar and Coconut Chutney.
 
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
-
+You can easily customize this recipe to fit your tastes by adding grated paneer, cheese, extra veggies (like peas, carrots, cauliflower, and/or green beans) to the potato filling, and serving with other favorite dipping sauces or side dishes.
         </div>
 
 
@@ -51,12 +50,12 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+              150k
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Fitness </span>
+            <span className='title-background'>Food </span>
 
           </div>
           <br />
@@ -99,8 +98,9 @@ const Aerobic = () => {
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-
         <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src=" https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgfooter' alt='notfound' />,
@@ -122,13 +122,13 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
+
           </div>
           </Link>
 
           {/* SECOND -CHILD -FOOTER */}
-           
           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -153,7 +153,7 @@ const Aerobic = () => {
 
           </div>
 
-         </Link>
+</Link>
 
 
 
@@ -185,8 +185,7 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
-
+</Link>
 
         </div>
 
@@ -228,4 +227,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default MasalaDosa

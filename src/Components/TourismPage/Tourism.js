@@ -3,6 +3,7 @@ import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
 import kerala from './kerala.jpg'
+import { Link } from 'react-router-dom'
 import './styletourism.css'
 // OBJECTS RELATED TO TOP POST DETAILS IN HOME PAGE
 
@@ -108,12 +109,21 @@ const Tourism = () => {
           <br />
 
           <div  >
+          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
+            </Link>
+            <Link to="/kodaikanal" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
+            </Link>
+            <Link to="/jammukashmir" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
+            </Link>
+            <Link to="/shimla" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
+            </Link>
+            <Link to="/goa" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
-
+            </Link>
           </div>
 
         </div>
@@ -122,12 +132,21 @@ const Tourism = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-
+          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
+          </Link>
+          <Link to="/kodaikanal" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
+          </Link>
+          <Link to="/jammukashmir" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
+          </Link>
+          <Link to="/shimla" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
+          </Link>
+          <Link to="/goa" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
+          </Link>
         </div>
 
 

@@ -4,7 +4,8 @@ import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+
+const RadheShyam = () => {
   return (
     <>
 
@@ -13,18 +14,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>RADHE SHYAM</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src="https://static.toiimg.com/photo/msid-88312302/88312302.jpg?61214" className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>100k</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,14 +34,9 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
+        A romantic drama set in Europe during the 1970s.Radhe Shyam is a period romance that has been written and directed by Radha Krishna Kumar. The story of the film is set in the Europe of the 1970s and it has been simultaneously shot in Telugu and Hindi. Radhe Shyam has been produced under the banners of T-Series and UV Creations and the Hindi version is distributed by AA Films. 
 
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
-
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
-
+It stars Pooja Hegde as Prerana, Prabhas as Vikramaditya and Krishnam Raju as Paramahamsa alongside Sachin Khedekar, Murali Sharma, Bhagyashree, Kunaal Roy Kapur, Priyadarshi, Sasha Chettri and Sathyan Sivakumar as supporting characters.
         </div>
 
 
@@ -51,12 +47,12 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+           100k
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Fitness </span>
+            <span className='title-background'>Tollywood </span>
 
           </div>
           <br />
@@ -99,8 +95,9 @@ const Aerobic = () => {
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-
         <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src=" https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgfooter' alt='notfound' />,
@@ -122,13 +119,12 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
-          </div>
-          </Link>
 
+          </div>
+</Link>
           {/* SECOND -CHILD -FOOTER */}
-           
           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -153,7 +149,7 @@ const Aerobic = () => {
 
           </div>
 
-         </Link>
+</Link>
 
 
 
@@ -164,7 +160,7 @@ const Aerobic = () => {
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2017/04/paneer-butter-masala-recipe-step-by-step-instructions.jpg?fit=2592%2C1944&quality=65&strip=all&ssl=1" className='imgfooter' alt='notfound' />,
-            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala </h2>
+            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala</h2>
 
 
 
@@ -185,9 +181,8 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
 
-
+</Link>
         </div>
 
 
@@ -228,4 +223,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default RadheShyam

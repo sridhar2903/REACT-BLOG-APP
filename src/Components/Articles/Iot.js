@@ -4,7 +4,8 @@ import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+
+const Iot = () => {
   return (
     <>
 
@@ -13,18 +14,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>INTERNET OF THINGS</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src="https://imageio.forbes.com/specials-images/imageserve/5f965d43ac32303829f68758/The-5-Biggest-Internet-Of-Things--IoT--Trends-In-2021-Everyone-Must-Get-Ready-For-Now/960x0.jpg?fit=bounds&format=jpg&width=960" className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>2.5k</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,14 +34,7 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
-
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
-
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
-
+        The Internet of Things, or IoT, refers to the billions of physical devices around the world that are now connected to the internet, all collecting and sharing data. Thanks to the arrival of super-cheap computer chips and the ubiquity of wireless networks, it's possible to turn anything, from something as small as a pill to something as big as an aeroplane, into a part of the IoT. Connecting up all these different objects and adding sensors to them adds a level of digital intelligence to devices that would be otherwise dumb, enabling them to communicate real-time data without involving a human being. The Internet of Things is making the fabric of the world around us more smarter and more responsive, merging the digital and physical universes.
         </div>
 
 
@@ -51,12 +45,12 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+              2.5k
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Fitness </span>
+            <span className='title-background'>Technology </span>
 
           </div>
           <br />
@@ -99,8 +93,8 @@ const Aerobic = () => {
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-
         <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src=" https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgfooter' alt='notfound' />,
@@ -122,13 +116,13 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
+
           </div>
           </Link>
 
           {/* SECOND -CHILD -FOOTER */}
-           
-          <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -153,13 +147,13 @@ const Aerobic = () => {
 
           </div>
 
-         </Link>
+</Link>
 
 
 
 
           {/* THIRD CHILD FOOTER */}
-          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
+          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
@@ -185,9 +179,8 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
 
-
+</Link>
         </div>
 
 
@@ -228,4 +221,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default Iot

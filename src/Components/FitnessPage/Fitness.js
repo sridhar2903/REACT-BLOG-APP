@@ -2,6 +2,7 @@ import React from 'react'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
+import { Link } from 'react-router-dom'
 import './stylefitness.css'
 // OBJECTS RELATED TO TOP POST DETAILS IN HOME PAGE
 
@@ -20,7 +21,7 @@ const toppostsdetailsone = {
   
   }
   const toppostsdetailsthree = {
-    img: <img src="https://www.verywellfit.com/thmb/xVLTx6KUBTuPDGbkgqXhehUWP68=/2122x1415/filters:fill(FFDB5D,1)/GettyImages-485244797-566eae435f9b583dc376e6ec.jpg" id='imgpost' alt='notfound' />,
+    img: <img src="https://www.mensjournal.com/wp-content/uploads/mf/1280-run-track-sprint-shuttle.jpg?w=900&h=506&crop=1&quality=86&strip=all" id='imgpost' alt='notfound' />,
     titletext: <b>Sprint</b>,
     maintitle: <div id="main-one-toppost" ><b>Fitness</b> / January 22, <br />2022 </div>
   
@@ -109,11 +110,21 @@ const Fitness = () => {
           <br />
 
           <div  >
+          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
+            </Link>
+            <Link to="/flexibility" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
+            </Link>
+            <Link to="/sprint" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
+            </Link>
+            <Link to="/muscularstrength" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
+            </Link>
+            <Link to="/balance" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
+            </Link>
 
           </div>
 
@@ -123,12 +134,21 @@ const Fitness = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-
+          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
+          </Link>
+          <Link to="/flexibility" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
+          </Link>
+          <Link to="/sprint" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
+          </Link>
+          <Link to="/muscularstrength" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
+          </Link>
+          <Link to="/balance" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
+          </Link>
         </div>
 
 

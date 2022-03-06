@@ -2,6 +2,7 @@ import React from 'react'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
+import { Link } from 'react-router-dom'
 import './styletollywood.css'
 // OBJECTS RELATED TO TOP POST DETAILS IN HOME PAGE
 
@@ -13,7 +14,7 @@ const toppostsdetailsone = {
   
   }
   const toppostsdetailstwo = {
-    img: <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" id='imgpost' alt='notfound' />,
+    img: <img src="https://w0.peakpx.com/wallpaper/830/395/HD-wallpaper-rrr-movie-rrr.jpg" id='imgpost' alt='notfound' />,
     titletext: <b>RRR Movie</b>,
     maintitle: <div id="main-one-toppost" ><b>Tollywood</b> / January 22, <br />2022 </div>
   
@@ -52,7 +53,7 @@ const toppostsdetailsone = {
   
   }
   const latestarticletwo = {
-    img: <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" id='imglatest' alt='notfound' />,
+    img: <img src="https://w0.peakpx.com/wallpaper/830/395/HD-wallpaper-rrr-movie-rrr.jpg" id='imglatest' alt='notfound' />,
     title: <b>RRR Movie</b>,
     info: <p>RRR is an upcoming Indian Telugu-language period<br/> action drama film directed by S. S. Rajamouli, and<br/> produced by D. V. V. Danayya of DVV Entertainments.</p>,
     moreinfo: <div><b>Tollywood</b> / January 22, 2022 </div>
@@ -109,11 +110,21 @@ const Tollywood = () => {
           <br />
 
           <div  >
+          <Link to="/radheshyam" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
+            </Link>
+            <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
+            </Link>
+            <Link to="/pushpa" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
+            </Link>
+            <Link to="/bheemlanayak" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
+            </Link>
+            <Link to="/salaar" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
+            </Link>
 
           </div>
 
@@ -123,12 +134,21 @@ const Tollywood = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-
+          <Link to="/radheshyam" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
+          </Link>
+          <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
+          </Link>
+          <Link to="/pushpa" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
+          </Link>
+          <Link to="/bheemlanayak" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
+          </Link>
+          <Link to="/salaar" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
+          </Link>
         </div>
 
 

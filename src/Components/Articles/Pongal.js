@@ -4,7 +4,8 @@ import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/likes.jpg'
 import { Link } from 'react-router-dom'
-const Aerobic = () => {
+
+const Pongal = () => {
   return (
     <>
 
@@ -13,18 +14,18 @@ const Aerobic = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>AEROBIC</h2>
+        <h2 className='main-article-title'>PONGAL</h2>
 
         <div className="image-article-section">
 
-          <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" className='imgarticle' alt='notfound' />,
+          <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/01/ven-pongal-recipe-1a.jpg" className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>9.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>80k</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -33,14 +34,7 @@ const Aerobic = () => {
 
 
         <div className="text-article-section">
-          Aerobic exercise is any type of cardiovascular conditioning. It can include activities like brisk walking, swimming, running, or cycling. You probably know it as “cardio.”
-
-          By definition, aerobic exercise means “with oxygen.” Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
-
-          Aerobic exercise differs from anaerobic exercise. Anaerobic exercises, such as weightlifting or sprinting, involve quick bursts of energy. They’re performed at maximum effort for a short time. This is unlike aerobic exercises. You perform aerobic exercises for a sustained period of time.
-
-          Read on to learn more about aerobic exercises you can try at home and at the gym. And remember, always talk to your doctor before beginning a new aerobic exercise routine.
-
+        Pongal is a popular recipe having both savory and sweet versions. It is made during the popular Pongal Festival or other Hindu festivals in South India and is offered to the deities as naivedyam (offerings of food).Pongal Dish is made of rice mixed with moong dal, ghee, cashew nuts, raisins, and mild spices. The spicy variety consists of moong dal, rice, cashews, curry leaves,pepper and ghee. The ingredients are good for winter and is made of the right balance of carbohydrate, protein and fats.
         </div>
 
 
@@ -51,12 +45,12 @@ const Aerobic = () => {
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              9.5k
+              80k
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Fitness </span>
+            <span className='title-background'>Food </span>
 
           </div>
           <br />
@@ -122,13 +116,13 @@ const Aerobic = () => {
               </div>
 
             </div>
-         
+
           </div>
           </Link>
 
           {/* SECOND -CHILD -FOOTER */}
-           
           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://images.indianexpress.com/2021/12/RRR-trailer-launch-live-blog-1200.jpg?w=389" className='imgfooter' alt='notfound' />,
@@ -152,8 +146,9 @@ const Aerobic = () => {
             </div>
 
           </div>
+          </Link>
 
-         </Link>
+
 
 
 
@@ -185,8 +180,7 @@ const Aerobic = () => {
             </div>
 
           </div>
-          </Link>
-
+</Link>
 
         </div>
 
@@ -228,4 +222,4 @@ const Aerobic = () => {
   )
 }
 
-export default Aerobic
+export default Pongal

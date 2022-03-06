@@ -25,9 +25,9 @@ const latesttwo = {
 }
 
 const latestthree = {
-  image: <img src="https://thebellyrulesthemind.net/wp-content/uploads/2019/12/Air-Fryer-Tandoori-Paneer-Tikka-7-720x405.png" id="ptikka" alt='notfound' />,
-  title: "Paneer Tikka",
-  info: "Paneer Tikka is a popular and delicious tandoori snack where paneer (Indian cottage cheese cubes) are marinated in a spiced yogurt-based marinade, arranged on skewers and grilled in the oven.",
+  image: <img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2017/04/paneer-butter-masala-recipe-step-by-step-instructions.jpg?fit=2592%2C1944&quality=65&strip=all&ssl=1" id="ptikka" alt='notfound' />,
+  title: "Paneer Butter Masala",
+  info: "Paneer Butter Masala is a popular and delicious tandoori snack where paneer (Indian cottage cheese cubes) are marinated in a spiced yogurt-based marinade, arranged on skewers and grilled in the oven.",
   subinfo: <div id="sub-three" ><b>Food</b> / January 10, 2022 </div>
 }
 
@@ -117,8 +117,9 @@ const Home = () => {
         <br />
         {/* GRID -SECTION CONTAINING THREE IMAGES IN HOME PAGE */}
         <div id="homegrid">
+          
           <div id="one-img">
-
+          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
             <div className="center-one-img">
               Kerala : God's Own Country
 
@@ -128,13 +129,20 @@ const Home = () => {
               </span>
 
             </div>
+            </Link>
           </div>
 
-
+         
           <div id="two-img">
+          <Link to="/sprint" style={{ textDecoration: 'none',color:'black' }}>
+                <div style={{fontFamily:'Montserrat, sans-serif',fontWeight:'bold',fontSize:'20px',textAlign:'center',paddingTop:'5em',color:'white'}}>Fitness</div>
+            </Link>
           </div>
 
           <div id="three-img">
+          <Link to="/artificialintelligence" style={{ textDecoration: 'none',color:'black' }}>
+          <div style={{fontFamily:'Montserrat, sans-serif',fontWeight:'bold',fontSize:'20px',textAlign:'center',paddingTop:'5em',color:'whitesmoke'}}>Technology</div>
+            </Link>
           </div>
         </div>
 
@@ -154,8 +162,12 @@ const Home = () => {
          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
            <Latesthome datalatest={latestone} />
            </Link> 
+           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latesttwo} />
+          </Link>
+          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latestthree} />
+          </Link>
         </div>
 
         <br />
@@ -186,11 +198,21 @@ const Home = () => {
           <br />
 
           <div  >
+          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
+            </Link>
+            <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
+            </Link>
+            <Link to="/radheshyam" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
+            </Link>
+            <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
+            </Link>
+            <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
+            </Link>
 
           </div>
 
@@ -200,12 +222,21 @@ const Home = () => {
         {/* LATEST ARTICLES -INFO -SECTION */}
         <div >
           <br />
-
+          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
+          </Link>
+          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
+          </Link>
+          <Link to="/radheshyam" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
+          </Link>
+          <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
+          </Link>
+          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
+          </Link>
         </div>
 
 
@@ -243,8 +274,12 @@ const Home = () => {
         <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
            <Latesthome datalatest={latestone} />
            </Link>
+           <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latesttwo} />
+          </Link>
+          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latestthree} />
+          </Link>
         </div>
 
 
