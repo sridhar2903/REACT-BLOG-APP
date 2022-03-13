@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { Categorycontext } from '../Contextapi'
+import { Homecontext } from './HomeContextapi'
 import Latesthome from './Latesthome'
 import TopPostsDetails from './TopPostsDetails'
 import LatestArticle from './LatestArticle'
@@ -17,14 +17,16 @@ import './stylehome.css'
 
 const Home = () => {
 
-  let [latestone,latesttwo,latestthree,toppostsdetailsone,
+
+   const [latestone,latesttwo,latestthree,toppostsdetailsone,
     toppostsdetailstwo,toppostsdetailsthree,toppostsdetailsfour,
     toppostsdetailsfive,latestarticleone,latestarticletwo,latestarticlethree,
-    latestarticlefour,latestarticlefive ]=useContext(Categorycontext);
-
+    latestarticlefour,latestarticlefive ]=useContext(Homecontext)
+  
 
   return (
     <>
+  
       <div className='homebody'>
 
 
@@ -214,8 +216,10 @@ const Home = () => {
 
 
       </div>
+     
     </>
   )
 }
+
 
 export default Home

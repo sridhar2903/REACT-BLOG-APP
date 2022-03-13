@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import { Categorycontext } from '../Contextapi'
+import { Foodcontext } from './FoodContextapi'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
@@ -13,27 +13,10 @@ import './stylefood.css'
 const Food = () => {
 
 
-  let [latestone,latesttwo,latestthree,
-    toppostsdetailsone,toppostsdetailstwo,toppostsdetailsthree,
-    toppostsdetailsfour,toppostsdetailsfive,latestarticleone,
-    latestarticletwo,latestarticlethree,latestarticlefour,
-    latestarticlefive,fitnesstoppostone,fitnesstopposttwo,
-    fitnesstoppostthree,fitnesstoppostfour,fitnesstoppostfive
-    ,fitnesslatestone,fitnesslatesttwo,fitnesslatestthree,
-    fitnesslatestfour,fitnesslatestfive,tourismtoppostone,tourismtopposttwo,
-    tourismtoppostthree, tourismtoppostfour,tourismtoppostfive,
-    tourismlatestarticleone,tourismlatestarticletwo, tourismlatestarticlethree,
-    tourismlatestarticlefour,tourismlatestarticlefive,tollywoodtoppostone
-    ,tollywoodtopposttwo,tollywoodtoppostthree,tollywoodtoppostfour,
-    tollywoodtoppostfive,tollywoodlatestone,tollywoodlatesttwo,
-    tollywoodlatestthree, tollywoodlatestfour, tollywoodlatestfive,
-    technologytoppostone, technologytopposttwo,technologytoppostthree,
-    technologytoppostfour,technologytoppostfive,technologylatestone,
-    technologylatesttwo,technologylatestthree,technologylatestfour,
-    technologylatestfive,foodtoppostone, foodtopposttwo,foodtoppostthree
+  let [foodtoppostone, foodtopposttwo,foodtoppostthree
     ,foodtoppostfour,foodtoppostfive,foodlatestarticleone,
     foodlatestarticletwo,foodlatestarticlethree,foodlatestarticlefour,
-    foodlatestarticlefive]=useContext(Categorycontext);
+    foodlatestarticlefive]=useContext(Foodcontext);
   return (
       <>
     <div className='foodbody'>

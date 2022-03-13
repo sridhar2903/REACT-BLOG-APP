@@ -1,25 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useContext } from 'react'
+import { Fitnesscontext } from './FitnessContextapi'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
-import { Link } from 'react-router-dom'
+
 import './stylefitness.css'
-import { Categorycontext } from '../Contextapi'
+
 
 
 
 const Fitness = () => {
 
 
-let [latestone,latesttwo,latestthree,
-  toppostsdetailsone,toppostsdetailstwo,toppostsdetailsthree,
-  toppostsdetailsfour,toppostsdetailsfive,latestarticleone,
-  latestarticletwo,latestarticlethree,latestarticlefour,
-  latestarticlefive,fitnesstoppostone,fitnesstopposttwo,
+let [fitnesstoppostone,fitnesstopposttwo,
   fitnesstoppostthree,fitnesstoppostfour,fitnesstoppostfive
   ,fitnesslatestone,fitnesslatesttwo,fitnesslatestthree,
-  fitnesslatestfour,fitnesslatestfive]=useContext(Categorycontext);
+  fitnesslatestfour,fitnesslatestfive]=useContext(Fitnesscontext);
 
   return (
       <>

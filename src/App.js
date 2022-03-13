@@ -32,26 +32,56 @@ import MasalaDosa from './Components/Articles/MasalaDosa';
 import Pongal from './Components/Articles/Pongal';
 import Rrr from './Components/Articles/Rrr';
 import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
-import { CategoryProvider } from './Components/Contextapi';
-
-
+import { HomeProvider } from './Components/Homepage/HomeContextapi';
+import { TourismProvider } from './Components/TourismPage/TourismContextapi';
+import { FitnessProvider } from './Components/FitnessPage/FitnessContextapi';
+import { TollywoodProvider } from './Components/TollywoodPage/TollywoodContextapi';
+import { TechnologyProvider } from './Components/TechnologyPage/TechnologyContextapi';
+import { FoodProvider } from './Components/FoodPage/FoodContextapi';
 
 
 const App = () => {
   return (
     <>
-    <CategoryProvider>
+   
 
   <Router>
+    <HomeProvider>
+     <TourismProvider>
+       <FitnessProvider>
+         <TollywoodProvider>
+           <TechnologyProvider>
+             <TollywoodProvider>
+               <TechnologyProvider>
+                 <FoodProvider>
+           
         <Header/>
+       
+
         <Routes>
+         
+     
           <Route path="/" element={ <Navigate to='/home'/>  }/>
           <Route path="/home" element={<Home />} />
+         
+          
+         
+          
+          
           <Route path="/tourism" element={<Tourism/>} />
+        
+         
           <Route path="/fitness" element={<Fitness/>} />
+            
+           
           <Route path="/tollywood" element={<Tollywood/>} />
+        
+         
           <Route path="/technology" element={<Technology/>} />
+         
+       
           <Route path="/food" element={<Food/>} />
+      
 
           {/* ARTICLES ROUTE */}
 
@@ -83,8 +113,16 @@ const App = () => {
           <Route path="/pongal" element={< Pongal/>} />
           
           </Routes>
+          </FoodProvider>
+          </TechnologyProvider>
+             </TollywoodProvider>
+           </TechnologyProvider>
+         </TollywoodProvider>
+       </FitnessProvider>
+       </TourismProvider>
+       </HomeProvider>
       </Router>
-      </CategoryProvider>
+    
     </>
   )
 }

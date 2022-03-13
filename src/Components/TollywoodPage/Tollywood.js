@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
-import { Categorycontext } from '../Contextapi'
+import { Tollywoodcontext } from './TollywoodContextapi'
 import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
@@ -13,20 +13,10 @@ import './styletollywood.css'
 
 const Tollywood = () => {
  
-  let[latestone,latesttwo,latestthree,
-    toppostsdetailsone,toppostsdetailstwo,toppostsdetailsthree,
-    toppostsdetailsfour,toppostsdetailsfive,latestarticleone,
-    latestarticletwo,latestarticlethree,latestarticlefour,
-    latestarticlefive,fitnesstoppostone,fitnesstopposttwo,
-    fitnesstoppostthree,fitnesstoppostfour,fitnesstoppostfive
-    ,fitnesslatestone,fitnesslatesttwo,fitnesslatestthree,
-    fitnesslatestfour,fitnesslatestfive,tourismtoppostone,tourismtopposttwo,
-    tourismtoppostthree, tourismtoppostfour,tourismtoppostfive,
-    tourismlatestarticleone,tourismlatestarticletwo, tourismlatestarticlethree,
-    tourismlatestarticlefour,tourismlatestarticlefive,tollywoodtoppostone
+  let[tollywoodtoppostone
     ,tollywoodtopposttwo,tollywoodtoppostthree,tollywoodtoppostfour,
     tollywoodtoppostfive,tollywoodlatestone,tollywoodlatesttwo,
-    tollywoodlatestthree, tollywoodlatestfour, tollywoodlatestfive]=useContext(Categorycontext);
+    tollywoodlatestthree, tollywoodlatestfour, tollywoodlatestfive]=useContext(Tollywoodcontext);
   
   return (
       <>
