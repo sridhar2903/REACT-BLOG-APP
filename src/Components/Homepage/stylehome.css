@@ -274,7 +274,7 @@ font-weight: bolder;
 
 /* MEDIA QUERY FOR 1920 RESOLUTION ONLY */
 
-@media only screen and (max-width:1920px)
+@media only screen and (min-width:1920px) and (max-width:1920px)
 {
     .homebody
     {
@@ -284,8 +284,7 @@ font-weight: bolder;
     }
 }
 
-
-@media only screen and (max-width:2560px)
+@media only screen and (min-width:2560px) and (max-width:2560px)
 {
     .homebody
     {
@@ -294,3 +293,4 @@ font-weight: bolder;
        
     }
 }
+
