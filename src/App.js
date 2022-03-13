@@ -32,6 +32,7 @@ import MasalaDosa from './Components/Articles/MasalaDosa';
 import Pongal from './Components/Articles/Pongal';
 import Rrr from './Components/Articles/Rrr';
 import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
+import { CategoryProvider } from './Components/Contextapi';
 
 
 
@@ -39,6 +40,8 @@ import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-do
 const App = () => {
   return (
     <>
+    <CategoryProvider>
+
   <Router>
         <Header/>
         <Routes>
@@ -81,6 +84,7 @@ const App = () => {
           
           </Routes>
       </Router>
+      </CategoryProvider>
     </>
   )
 }
