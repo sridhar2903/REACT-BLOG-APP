@@ -262,7 +262,15 @@ font-weight: bolder;
 
 
 
-
+@media only screen and (min-width:2560px) and (max-width:2560px)
+{
+    .homebody
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+       
+    }
+}
 
 
 
@@ -285,21 +293,5 @@ font-weight: bolder;
 }
 
 
-@media only screen and (min-width:2560px) and (max-width:2560px)
-{
-    .homebody
-    {
-        margin-left: 25%;
-        margin-right: 25%;
-       
-    }
-}
 
-@media only screen and (min-width:1600px) and (max-width:1600px)
-{
-    .homebody{
-        margin-left: 10em;
-        margin-right: 10em;
-    }
-}
 
