@@ -285,7 +285,15 @@ font-weight: bolder;
 }
 
 
-
+@media only screen and (min-width:2560px) and (max-width:2560px)
+{
+    .homebody
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+       
+    }
+}
 
 
 
