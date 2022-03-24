@@ -282,15 +282,14 @@ font-weight: bolder;
 
 /* MEDIA QUERY FOR 1920 RESOLUTION ONLY */
 
-@media only screen and (min-width:1400px) 
+/* @media only screen and (min-width:1400px) 
 {
     .homebody
     {
-        margin-left: 22rem;
-        margin-right: 22rem;
+       
        
     }
-}
+} */
 
 
 
