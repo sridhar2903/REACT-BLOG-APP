@@ -1,12 +1,20 @@
-import React from 'react'
-import './stylearticles.css'
+import React, { useContext } from 'react'
+import './articlestyle.css'
 import likes from'./imagesarticles/likes.jpg'
 import iconsmall from'./imagesarticles/iconsmall.jpg'
 import share from './imagesarticles/share.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import { ArticleContext } from './ArticleContext'
+
+// import './stylehome.css'
+const Article = () => {
+
+const[articledata]=useContext(ArticleContext);
 
 
-const Cryptography = () => {
+let {datamap}=useParams();
+
+
   return (
     <>
 
@@ -15,18 +23,18 @@ const Cryptography = () => {
 
       {/* ARTICLE INFO WITH IMAGE AND CREDITS DETAILS -SECTION */}
       <div className='articlebody'>
-        <h2 className='main-article-title'>CRYPTOGRAPHY</h2>
+        <h2 className='main-article-title'>{articledata[datamap-1].title}</h2>
 
         <div className="image-article-section">
 
-          <img src="https://i.ytimg.com/vi/cqgtdkURzTE/maxresdefault.jpg" className='imgarticle' alt='notfound' />,
+          <img src={articledata[datamap-1].img} className='imgarticle' alt='notfound' />,
         </div>
 
 
 
         {/* STICKY - ELEMENTS IN THE ARTICLE PAGE */}
         <div className='apply-sticky ' >
-          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>1.5k</span>
+          <img src={likes} className='img-sticky-likes' alt='not found' /> <span className='sticky-likes' style={{ fontFamily: 'Montserrat, sans-serif' }}>{articledata[datamap-1].likesone}</span>
           <br />
           <br />
           <img src={share} className='img-sticky-share' alt='not found' />  <span className='sticky-share' style={{ fontFamily: 'Montserrat, sans-serif' }}>Share this article</span>
@@ -35,12 +43,7 @@ const Cryptography = () => {
 
 
         <div className="text-article-section">
-        Cryptography is technique of securing information and communications through use of codes so that only those person for whom the information is intended can understand it and process it. Thus preventing unauthorized access to information. The prefix “crypt” means “hidden” and suffix graphy means “writing”.
-
-In Cryptography the techniques which are use to protect information are obtained from mathematical concepts and a set of rule based calculations known as algorithms to convert messages in ways that make it hard to decode it. These algorithms are used for cryptographic key generation, digital signing, verification to protect data privacy, web browsing on internet and to protect confidential transactions such as credit card and debit card transactions.
-
-Techniques used For Cryptography:
-In today’s age of computers cryptography is often associated with the process where an ordinary plain text is converted to cipher text which is the text made such that intended receiver of the text can only decode it and hence this process is known as encryption. The process of conversion of cipher text to plain text this is known as decryption.
+                  {articledata[datamap-1].info}
         </div>
 
 
@@ -51,12 +54,12 @@ In today’s age of computers cryptography is often associated with the process 
               <  img src={likes} alt='not found!!' />
             </div>
             <div className='countlikes'>
-              1.5k
+            {articledata[datamap-1].likesone}
             </div>
           </div>
 
           <div className='topictitle'>
-            <span className='title-background'>Technology </span>
+            <span className='title-background'>{articledata[datamap-1].category}</span>
 
           </div>
           <br />
@@ -99,7 +102,8 @@ In today’s age of computers cryptography is often associated with the process 
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-        <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+        {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=> 
+        <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
@@ -124,9 +128,12 @@ In today’s age of computers cryptography is often associated with the process 
             </div>
 
           </div>
-</Link>
+          </Link>
+        )}
+
           {/* SECOND -CHILD -FOOTER */}
-          <Link to="/rrr" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata) => articledata.title == "RRR").map((dataid) =>
+          <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
@@ -151,19 +158,21 @@ In today’s age of computers cryptography is often associated with the process 
             </div>
 
           </div>
-</Link>
 
+</Link>
+          )}
 
 
 
 
           {/* THIRD CHILD FOOTER */}
-          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
             <p style={{ color: 'gray', fontSize: '20px', fontFamily: 'Montserrat, sans-serif' }}>Related Reads</p>
             <img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2017/04/paneer-butter-masala-recipe-step-by-step-instructions.jpg?fit=2592%2C1944&quality=65&strip=all&ssl=1" className='imgfooter' alt='notfound' />,
-            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala </h2>
+            <h2 style={{ fontSize: '26px', fontFamily: 'Montserrat, sans-serif' }}>Paneer Butter Masala</h2>
 
 
 
@@ -186,6 +195,7 @@ In today’s age of computers cryptography is often associated with the process 
           </div>
 
 </Link>
+          )}
         </div>
 
 
@@ -226,4 +236,4 @@ In today’s age of computers cryptography is often associated with the process 
   )
 }
 
-export default Cryptography
+export default Article

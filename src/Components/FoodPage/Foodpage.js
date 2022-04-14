@@ -6,6 +6,7 @@ import TopPostsDetails from '../Homepage/TopPostsDetails'
 import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
 import './stylefood.css'
+import { ArticleContext } from '../ArticlesAll/ArticleContext'
 
 
 
@@ -14,6 +15,7 @@ const Food = () => {
 
 
   let [fooddata]=useContext(Foodcontext);
+  const[articledata] =useContext(ArticleContext)
 
   const filterlone=fooddata.filter((fooddata)=>fooddata.id==="1")
   const foodtoppostone=filterlone[0]
@@ -70,22 +72,34 @@ const Food = () => {
           <br />
           <br />
 
-          <div  >
-          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
+          <div>
+
+          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostone} />
             </Link>
-            <Link to="/rajmamasala" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+           {articledata.filter((articledata) => articledata.title == "RAJMA MASALA").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtopposttwo} />
             </Link>
-            <Link to="/palakpaneer" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+            
+            {articledata.filter((articledata) => articledata.title == "PALAK PANEER").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostthree} />
             </Link>
-            <Link to="/masaladosa" style={{ textDecoration: 'none',color:'black' }}>
+            )}
+             {articledata.filter((articledata) => articledata.title == "MASALA DOSA").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostfour} />
             </Link>
-            <Link to="/pongal" style={{ textDecoration: 'none',color:'black' }}>
+             )}
+             {articledata.filter((articledata) => articledata.title == "PONGAL").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostfive} />
             </Link>
+             )}
           </div>
 
         </div>
@@ -94,21 +108,31 @@ const Food = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticleone} />
           </Link>
-          <Link to="/rajmamasala" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata) => articledata.title == "RAJMA MASALA").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticletwo} />
           </Link>
-          <Link to="/palakpaneer" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata) => articledata.title == "PALAK PANEER").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlethree} />
           </Link>
-          <Link to="/masaladosa" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata) => articledata.title == "MASALA DOSA").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlefour} />
           </Link>
-          <Link to="/pongal" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata) => articledata.title == "PONGAL").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlefive} />
           </Link>
+          )}
         </div>
 
 

@@ -7,6 +7,7 @@ import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
 
 import './styletechnology.css'
+import { ArticleContext } from '../ArticlesAll/ArticleContext'
 
 
 
@@ -15,6 +16,7 @@ const Technology = () => {
 
 
   let [technologydata]=useContext(Technologycontext);
+  const [articledata]=useContext(ArticleContext);
 
   const filterlone=technologydata.filter((technologydata)=>technologydata.id==="1")
   const  technologytoppostone=filterlone[0]
@@ -71,22 +73,34 @@ const Technology = () => {
           <br />
           <br />
 
-          <div  >
-          <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
+          <div>
+          {articledata.filter((articledata) => articledata.title == "CYBER SECURITY").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={technologytoppostone} />
             </Link>
-            <Link to="/artificialintelligence" style={{ textDecoration: 'none',color:'black' }}>
+          )} 
+
+          {articledata.filter((articledata) => articledata.title == "ARTIFICIAL INTELLIGENCE").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={technologytopposttwo} />
             </Link>
-            <Link to="/blockchaintechnology" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+
+              {articledata.filter((articledata) => articledata.title == "BLOCK CHAIN TECHNOLOGY").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={technologytoppostthree} />
             </Link>
-            <Link to="/cryptography" style={{ textDecoration: 'none',color:'black' }}>
+              )}
+              {articledata.filter((articledata) => articledata.title == "CRYPTOGRAPHY").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={technologytoppostfour} />
             </Link>
-            <Link to="/iot" style={{ textDecoration: 'none',color:'black' }}>
+              )}
+              {articledata.filter((articledata) => articledata.title == "INTERNET OF THINGS").map((dataid) =>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={technologytoppostfive} />
             </Link>
+              )}
 
           </div>
 
@@ -96,21 +110,32 @@ const Technology = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          <Link to="/cybersecurity" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata) => articledata.title == "CYBER SECURITY").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={technologylatestone} />
           </Link>
-          <Link to="/artificialintelligence" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+
+           {articledata.filter((articledata) => articledata.title == "ARTIFICIAL INTELLIGENCE").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={technologylatesttwo} />
           </Link>
-          <Link to="/blockchaintechnology" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+            {articledata.filter((articledata) => articledata.title == "BLOCK CHAIN TECHNOLOGY").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={technologylatestthree} />
           </Link>
-          <Link to="/cryptography" style={{ textDecoration: 'none',color:'black' }}>
+            )}
+            {articledata.filter((articledata) => articledata.title == "CRYPTOGRAPHY").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={technologylatestfour} />
           </Link>
-          <Link to="/iot" style={{ textDecoration: 'none',color:'black' }}>
+            )}
+            {articledata.filter((articledata) => articledata.title == "INTERNET OF THINGS").map((dataid) =>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={technologylatestfive} />
           </Link>
+            )}
         </div>
 
 

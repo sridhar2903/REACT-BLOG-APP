@@ -7,12 +7,14 @@ import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
 
 import './styletourism.css'
+import { ArticleContext } from '../ArticlesAll/ArticleContext.js'
 
 
 const Tourism = () => {
 
   let [tourismdata]=useContext(Tourismcontext);
-  
+  let [articledata]=useContext(ArticleContext);
+
   const filterlone=tourismdata.filter((tourismdata)=>tourismdata.id==="1")
   const tourismtoppostone=filterlone[0]
  
@@ -70,22 +72,35 @@ const Tourism = () => {
           <br />
           <br />
 
-          <div  >
-          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
+          <div>
+
+          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostone} />
             </Link>
-            <Link to="/kodaikanal" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+
+           {articledata.filter((articledata)=>articledata.title=="KODAIKANAL").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtopposttwo} />
             </Link>
-            <Link to="/jammukashmir" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+
+            {articledata.filter((articledata)=>articledata.title=="Jammu And Kashmir").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostthree} />
             </Link>
-            <Link to="/shimla" style={{ textDecoration: 'none',color:'black' }}>
+            )}
+             {articledata.filter((articledata)=>articledata.title=="Shimla").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostfour} />
             </Link>
-            <Link to="/goa" style={{ textDecoration: 'none',color:'black' }}>
+             )}
+             {articledata.filter((articledata)=>articledata.title=="Goa").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostfive} />
             </Link>
+             )}
           </div>
 
         </div>
@@ -94,21 +109,31 @@ const Tourism = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticleone} />
           </Link>
-          <Link to="/kodaikanal" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="KODAIKANAL").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticletwo} />
           </Link>
-          <Link to="/jammukashmir" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="Jammu And Kashmir").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlethree} />
           </Link>
-          <Link to="/shimla" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+           {articledata.filter((articledata)=>articledata.title=="Shimla").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlefour} />
           </Link>
-          <Link to="/goa" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+            {articledata.filter((articledata)=>articledata.title=="Goa").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlefive} />
           </Link>
+            )}
         </div>
 
 

@@ -7,6 +7,7 @@ import LatestArticle from '../Homepage/LatestArticle'
 import Advertisement from '../Homepage/Advertisement'
 
 import './stylefitness.css'
+import { ArticleContext } from '../ArticlesAll/ArticleContext'
 
 
 
@@ -14,6 +15,8 @@ import './stylefitness.css'
 const Fitness = () => {
 
 let [fitnessdata]=useContext(Fitnesscontext);
+
+const [articledata]=useContext(ArticleContext)
 
 const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
   const fitnesstoppostone=filterlone[0]
@@ -71,22 +74,33 @@ const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
           <br />
           <br />
 
-          <div  >
-          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+          <div>
+
+          {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostone} />
             </Link>
-            <Link to="/flexibility" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="FLEXIBILITY").map((dataid)=>
+            <Link to={"/articles/" + dataid.id }  style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstopposttwo} />
             </Link>
-            <Link to="/sprint" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="SPRINT").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostthree} />
             </Link>
-            <Link to="/muscularstrength" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="MUSCULAR STRENGTH").map((dataid)=>
+            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostfour} />
             </Link>
-            <Link to="/balance" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+           {articledata.filter((articledata)=>articledata.title=="BALANCE").map((dataid)=>
+            <Link to={"/articles/" + dataid.id }style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostfive} />
             </Link>
+           )}
 
           </div>
 
@@ -96,21 +110,31 @@ const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
+          {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestone} />
           </Link>
-          <Link to="/flexibility" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+          {articledata.filter((articledata)=>articledata.title=="FLEXIBILITY").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatesttwo} />
           </Link>
-          <Link to="/sprint" style={{ textDecoration: 'none',color:'black' }}>
+          )}
+           {articledata.filter((articledata)=>articledata.title=="SPRINT").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestthree} />
           </Link>
-          <Link to="/muscularstrength" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+           {articledata.filter((articledata)=>articledata.title=="MUSCULAR STRENGTH").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestfour} />
           </Link>
-          <Link to="/balance" style={{ textDecoration: 'none',color:'black' }}>
+           )}
+           {articledata.filter((articledata)=>articledata.title=="BALANCE").map((dataid)=>
+          <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestfive} />
           </Link>
+           )}
         </div>
 
 
