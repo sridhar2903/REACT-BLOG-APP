@@ -21,7 +21,7 @@ const Home = () => {
    const [homedata ]=useContext(Homecontext)
     
 
-    // similarly for all remaining homedata's :to get the particular object from array of objects.
+  
     const filterlone=homedata.filter((homedata)=>homedata.id==="1")
  const latestone=filterlone[0]
 
