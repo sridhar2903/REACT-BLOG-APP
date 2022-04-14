@@ -13,10 +13,38 @@ import './stylefood.css'
 const Food = () => {
 
 
-  let [foodtoppostone, foodtopposttwo,foodtoppostthree
-    ,foodtoppostfour,foodtoppostfive,foodlatestarticleone,
-    foodlatestarticletwo,foodlatestarticlethree,foodlatestarticlefour,
-    foodlatestarticlefive]=useContext(Foodcontext);
+  let [fooddata]=useContext(Foodcontext);
+
+  const filterlone=fooddata.filter((fooddata)=>fooddata.id==="1")
+  const foodtoppostone=filterlone[0]
+ 
+   const filterltwo=fooddata.filter((fooddata)=>fooddata.id==="2")
+  const foodtopposttwo=filterltwo[0]
+ 
+   const filterlthree=fooddata.filter((fooddata)=>fooddata.id==='3')
+   const  foodtoppostthree=filterlthree[0]
+ 
+   const filterpone=fooddata.filter((fooddata)=>fooddata.id==='4')
+   const  foodtoppostfour=filterpone[0]
+ 
+   const  filterptwo=fooddata.filter((fooddata)=>fooddata.id==='5')
+   const foodtoppostfive=filterptwo[0]
+ 
+   const filterpthree=fooddata.filter((fooddata)=>fooddata.id==='6')
+   const foodlatestarticleone=filterpthree[0]
+   
+   const filterpfour=fooddata.filter((fooddata)=>fooddata.id==='7')
+   const foodlatestarticletwo=filterpfour[0]
+ 
+   const filterpfive=fooddata.filter((fooddata)=>fooddata.id==='8')
+   const foodlatestarticlethree= filterpfive[0]
+ 
+   const filteraone=fooddata.filter((fooddata)=>fooddata.id==='9')
+   const foodlatestarticlefour= filteraone[0]
+ 
+   const filteratwo=fooddata.filter((fooddata)=>fooddata.id==='10')
+   const foodlatestarticlefive=filteratwo[0]
+
   return (
       <>
     <div className='foodbody'>

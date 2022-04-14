@@ -12,11 +12,40 @@ import './styletollywood.css'
 
 
 const Tollywood = () => {
+
  
-  let[tollywoodtoppostone
-    ,tollywoodtopposttwo,tollywoodtoppostthree,tollywoodtoppostfour,
-    tollywoodtoppostfive,tollywoodlatestone,tollywoodlatesttwo,
-    tollywoodlatestthree, tollywoodlatestfour, tollywoodlatestfive]=useContext(Tollywoodcontext);
+  let[tollywooddata]=useContext(Tollywoodcontext);
+
+  const filterlone=tollywooddata.filter((tollywooddata)=>tollywooddata.id==="1")
+  const tollywoodtoppostone=filterlone[0]
+ 
+   const filterltwo=tollywooddata.filter((tollywooddata)=>tollywooddata.id==="2")
+  const tollywoodtopposttwo=filterltwo[0]
+ 
+   const filterlthree=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='3')
+   const tollywoodtoppostthree=filterlthree[0]
+ 
+   const filterpone=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='4')
+   const  tollywoodtoppostfour=filterpone[0]
+ 
+   const  filterptwo=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='5')
+   const   tollywoodtoppostfive=filterptwo[0]
+ 
+   const filterpthree=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='6')
+   const tollywoodlatestone=filterpthree[0]
+   
+   const filterpfour=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='7')
+   const tollywoodlatesttwo=filterpfour[0]
+ 
+   const filterpfive=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='8')
+   const tollywoodlatestthree= filterpfive[0]
+ 
+   const filteraone=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='9')
+   const tollywoodlatestfour= filteraone[0]
+ 
+   const filteratwo=tollywooddata.filter((tollywooddata)=>tollywooddata.id==='10')
+   const tollywoodlatestfive=filteratwo[0]
+  
   
   return (
       <>

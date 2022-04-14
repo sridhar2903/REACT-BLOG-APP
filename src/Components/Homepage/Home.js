@@ -17,11 +17,51 @@ import './stylehome.css'
 
 const Home = () => {
 
+  
+   const [homedata ]=useContext(Homecontext)
+    
 
-   const [latestone,latesttwo,latestthree,toppostsdetailsone,
-    toppostsdetailstwo,toppostsdetailsthree,toppostsdetailsfour,
-    toppostsdetailsfive,latestarticleone,latestarticletwo,latestarticlethree,
-    latestarticlefour,latestarticlefive ]=useContext(Homecontext)
+    // similarly for all remaining homedata's :to get the particular object from array of objects.
+    const filterlone=homedata.filter((homedata)=>homedata.id==="1")
+ const latestone=filterlone[0]
+
+  const filterltwo=homedata.filter((homedata)=>homedata.id==="2")
+ const latesttwo=filterltwo[0]
+
+  const filterlthree=homedata.filter((homedata)=>homedata.id==='3')
+  const latestthree=filterlthree[0]
+
+  const filterpone=homedata.filter((homedata)=>homedata.id==='4')
+  const toppostsdetailsone=filterpone[0]
+
+  const  filterptwo=homedata.filter((homedata)=>homedata.id==='5')
+  const  toppostsdetailstwo=filterptwo[0]
+
+  const filterpthree=homedata.filter((homedata)=>homedata.id==='6')
+  const toppostsdetailsthree=filterpthree[0]
+  
+  const filterpfour=homedata.filter((homedata)=>homedata.id==='7')
+  const toppostsdetailsfour=filterpfour[0]
+
+  const filterpfive=homedata.filter((homedata)=>homedata.id==='8')
+  const toppostsdetailsfive= filterpfive[0]
+
+  const filteraone=homedata.filter((homedata)=>homedata.id==='9')
+  const latestarticleone= filteraone[0]
+
+  const filteratwo=homedata.filter((homedata)=>homedata.id==='10')
+  const latestarticletwo=filteratwo[0]
+ 
+
+  const filterathree=homedata.filter((homedata)=>homedata.id==='11')
+  const latestarticlethree=filterathree[0]
+
+  const  filterafour=homedata.filter((homedata)=>homedata.id==='12')
+  const  latestarticlefour=filterafour[0]
+
+  const filterafive=homedata.filter((homedata)=>homedata.id==='13')
+  const latestarticlefive=filterafive[0]
+  
   
 
   return (
@@ -74,7 +114,7 @@ const Home = () => {
         <br />
 
         <div className='flexlatest'>
-
+     
          <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
            <Latesthome datalatest={latestone} />
            </Link> 
@@ -90,12 +130,9 @@ const Home = () => {
         <br />
         <br />
 
+{/* LATEST ARTICLES TITLE  ONLY*/}
 
-
-
-        {/* LATEST ARTICLES TITLE  ONLY*/}
-
-        <h1 className="latestarticle-home-title">
+<h1 className="latestarticle-home-title">
           Latest Articles
         </h1>
         <hr className="hr-latest" />
@@ -134,13 +171,14 @@ const Home = () => {
 
         </div>
 
-
+         
         {/* LATEST ARTICLES -INFO -SECTION */}
         <div >
           <br />
           <Link to="/kerala" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
           </Link>
+         
           <Link to="/aerobic" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
           </Link>
@@ -153,14 +191,12 @@ const Home = () => {
           <Link to="/paneerbuttermasala" style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
           </Link>
+    
         </div>
+     
+ {/* ADVERTISEMENT - SECTION*/}
 
-
-
-
-        {/* ADVERTISEMENT - SECTION*/}
-
-        <div className="floatadv-home">
+ <div className="floatadv-home">
           <Advertisement />
         </div>
 
@@ -197,20 +233,6 @@ const Home = () => {
           <Latesthome datalatest={latestthree} />
           </Link>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

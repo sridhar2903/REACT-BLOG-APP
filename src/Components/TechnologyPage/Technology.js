@@ -13,10 +13,38 @@ import './styletechnology.css'
 
 const Technology = () => {
 
-  let [technologytoppostone, technologytopposttwo,technologytoppostthree,
-    technologytoppostfour,technologytoppostfive,technologylatestone,
-    technologylatesttwo,technologylatestthree,technologylatestfour,
-    technologylatestfive]=useContext(Technologycontext);
+
+  let [technologydata]=useContext(Technologycontext);
+
+  const filterlone=technologydata.filter((technologydata)=>technologydata.id==="1")
+  const  technologytoppostone=filterlone[0]
+ 
+   const filterltwo=technologydata.filter((technologydata)=>technologydata.id==="2")
+  const technologytopposttwo=filterltwo[0]
+ 
+   const filterlthree=technologydata.filter((technologydata)=>technologydata.id==='3')
+   const  technologytoppostthree=filterlthree[0]
+ 
+   const filterpone=technologydata.filter((technologydata)=>technologydata.id==='4')
+   const  technologytoppostfour=filterpone[0]
+ 
+   const  filterptwo=technologydata.filter((technologydata)=>technologydata.id==='5')
+   const technologytoppostfive=filterptwo[0]
+ 
+   const filterpthree=technologydata.filter((technologydata)=>technologydata.id==='6')
+   const technologylatestone=filterpthree[0]
+   
+   const filterpfour=technologydata.filter((technologydata)=>technologydata.id==='7')
+   const technologylatesttwo=filterpfour[0]
+ 
+   const filterpfive=technologydata.filter((technologydata)=>technologydata.id==='8')
+   const technologylatestthree= filterpfive[0]
+ 
+   const filteraone=technologydata.filter((technologydata)=>technologydata.id==='9')
+   const technologylatestfour= filteraone[0]
+ 
+   const filteratwo=technologydata.filter((technologydata)=>technologydata.id==='10')
+   const technologylatestfive=filteratwo[0]
 
   return (
       <>

@@ -13,11 +13,38 @@ import './stylefitness.css'
 
 const Fitness = () => {
 
+let [fitnessdata]=useContext(Fitnesscontext);
 
-let [fitnesstoppostone,fitnesstopposttwo,
-  fitnesstoppostthree,fitnesstoppostfour,fitnesstoppostfive
-  ,fitnesslatestone,fitnesslatesttwo,fitnesslatestthree,
-  fitnesslatestfour,fitnesslatestfive]=useContext(Fitnesscontext);
+const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
+  const fitnesstoppostone=filterlone[0]
+ 
+   const filterltwo=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="2")
+  const fitnesstopposttwo=filterltwo[0]
+ 
+   const filterlthree=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='3')
+   const fitnesstoppostthree=filterlthree[0]
+ 
+   const filterpone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='4')
+   const  fitnesstoppostfour=filterpone[0]
+ 
+   const  filterptwo=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='5')
+   const  fitnesstoppostfive=filterptwo[0]
+ 
+   const filterpthree=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='6')
+   const fitnesslatestone=filterpthree[0]
+   
+   const filterpfour=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='7')
+   const fitnesslatesttwo=filterpfour[0]
+ 
+   const filterpfive=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='8')
+   const fitnesslatestthree= filterpfive[0]
+ 
+   const filteraone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='9')
+   const fitnesslatestfour= filteraone[0]
+ 
+   const filteratwo=fitnessdata.filter((fitnessdata)=>fitnessdata.id==='10')
+   const fitnesslatestfive=filteratwo[0]
+
 
   return (
       <>

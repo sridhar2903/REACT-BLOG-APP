@@ -4,12 +4,12 @@ const LatestArticle = ({ dataarticle }) => {
     return (
         <>
 
-            <hr className="hr-latest-info" />
+<hr className="hr-latest-info" />
             <br />
             <br />
             <br />
             <div id='container-latest-article'>
-                <div id="img-latest-article">
+                <div>
 
                     {dataarticle.img}
                 </div>
