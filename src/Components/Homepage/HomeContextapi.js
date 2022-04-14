@@ -43,6 +43,7 @@ export const HomeProvider=(props)=>
         
         
         },
+        
         {
           id:"5",
           img: <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" id='imgpost' alt='notfound' />,
@@ -51,6 +52,7 @@ export const HomeProvider=(props)=>
         
         
         },
+
          {
           id:"6",
           img: <img src="https://static.toiimg.com/photo/msid-88312302/88312302.jpg?61214" id='imgpost' alt='notfound' />,
@@ -59,6 +61,7 @@ export const HomeProvider=(props)=>
         
         
         },
+
          {
           id:"7",
           img: <img src="https://www.financialexpress.com/wp-content/uploads/2021/08/cyber-security.jpg" id='imgpost' alt='notfound' />,
@@ -103,15 +106,16 @@ export const HomeProvider=(props)=>
           moreinfo: <div><b>Tollywood</b> / January 22, 2022 </div>
         
         },
-        , {
+        {
           id:"12",
           img: <img src="https://www.financialexpress.com/wp-content/uploads/2021/08/cyber-security.jpg" id='imglatest' alt='notfound' />,
           title: <b>Cyber Security</b>,
           info: <p>Cyber security is the application of technologies,<br/> processes and controls to protect systems, networks, <br/>programs, devices and data from cyber attacks.<br/> It aims to reduce the risk of cyber attacks and <br/> protect against the unauthorised exploitation <br/>of systems, networks and technologies.</p>,
           moreinfo: <div><b>Technology</b> / January 22, 2022 </div>
         
-        }
-        , {
+        },
+        
+        {
           id:"13",
           img: <img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2017/04/paneer-butter-masala-recipe-step-by-step-instructions.jpg?fit=2592%2C1944&quality=65&strip=all&ssl=1" id='imglatest' alt='notfound' />,
           title: <b>Paneer Butter Masala</b>,
