@@ -74,28 +74,28 @@ const Food = () => {
 
           <div>
 
-          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "Paneer Butter Masala").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostone} />
             </Link>
           )}
-           {articledata.filter((articledata) => articledata.title == "RAJMA MASALA").map((dataid) =>
+           {articledata.filter((articledata) => articledata.title === "RAJMA MASALA").map((dataid) =>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtopposttwo} />
             </Link>
            )}
             
-            {articledata.filter((articledata) => articledata.title == "PALAK PANEER").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "PALAK PANEER").map((dataid) =>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostthree} />
             </Link>
             )}
-             {articledata.filter((articledata) => articledata.title == "MASALA DOSA").map((dataid) =>
+             {articledata.filter((articledata) => articledata.title === "MASALA DOSA").map((dataid) =>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostfour} />
             </Link>
              )}
-             {articledata.filter((articledata) => articledata.title == "PONGAL").map((dataid) =>
+             {articledata.filter((articledata) => articledata.title === "PONGAL").map((dataid) =>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={foodtoppostfive} />
             </Link>
@@ -108,27 +108,27 @@ const Food = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "Paneer Butter Masala").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticleone} />
           </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "RAJMA MASALA").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "RAJMA MASALA").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticletwo} />
           </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "PALAK PANEER").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "PALAK PANEER").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlethree} />
           </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "MASALA DOSA").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "MASALA DOSA").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlefour} />
           </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "PONGAL").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "PONGAL").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={foodlatestarticlefive} />
           </Link>

@@ -84,20 +84,20 @@ const Tollywood = () => {
 
           <div>
 
-            {articledata.filter((articledata) => articledata.title == "RADHESHYAM").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "RADHESHYAM").map((dataid) =>
               <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
                 <TopPostsDetails datapost={tollywoodtoppostone} />
               </Link>
             )}
 
-            {articledata.filter((articledata) => articledata.title == "RRR").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "RRR").map((dataid) =>
               <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
                 <TopPostsDetails datapost={tollywoodtopposttwo} />
               </Link>
             )}
 
 
-            {articledata.filter((articledata) => articledata.title == "PUSHPA").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "PUSHPA").map((dataid) =>
               <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
                 <TopPostsDetails datapost={tollywoodtoppostthree} />
               </Link>
@@ -106,13 +106,13 @@ const Tollywood = () => {
 
 
 
-            {articledata.filter((articledata) => articledata.title == "BHEEMLA NAYAK").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "BHEEMLA NAYAK").map((dataid) =>
               <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
                 <TopPostsDetails datapost={tollywoodtoppostfour} />
               </Link>
             )}
 
-            {articledata.filter((articledata) => articledata.title == "SALAAR").map((dataid) =>
+            {articledata.filter((articledata) => articledata.title === "SALAAR").map((dataid) =>
               <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
                 <TopPostsDetails datapost={tollywoodtoppostfive} />
               </Link>
@@ -126,28 +126,28 @@ const Tollywood = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          {articledata.filter((articledata) => articledata.title == "RADHESHYAM").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "RADHESHYAM").map((dataid) =>
             <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
               <LatestArticle dataarticle={tollywoodlatestone} />
             </Link>
           )}
 
-          {articledata.filter((articledata) => articledata.title == "RRR").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "RRR").map((dataid) =>
             <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
               <LatestArticle dataarticle={tollywoodlatesttwo} />
             </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "PUSHPA").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "PUSHPA").map((dataid) =>
             <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
               <LatestArticle dataarticle={tollywoodlatestthree} />
             </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "BHEEMLA NAYAK").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "BHEEMLA NAYAK").map((dataid) =>
             <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
               <LatestArticle dataarticle={tollywoodlatestfour} />
             </Link>
           )}
-          {articledata.filter((articledata) => articledata.title == "SALAAR").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "SALAAR").map((dataid) =>
             <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none', color: 'black' }}>
               <LatestArticle dataarticle={tollywoodlatestfive} />
             </Link>

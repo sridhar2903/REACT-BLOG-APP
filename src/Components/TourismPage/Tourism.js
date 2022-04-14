@@ -74,29 +74,29 @@ const Tourism = () => {
 
           <div>
 
-          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KERALA").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostone} />
             </Link>
           )}
 
-           {articledata.filter((articledata)=>articledata.title=="KODAIKANAL").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="KODAIKANAL").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtopposttwo} />
             </Link>
            )}
 
-            {articledata.filter((articledata)=>articledata.title=="Jammu And Kashmir").map((dataid)=>
+            {articledata.filter((articledata)=>articledata.title==="Jammu And Kashmir").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostthree} />
             </Link>
             )}
-             {articledata.filter((articledata)=>articledata.title=="Shimla").map((dataid)=>
+             {articledata.filter((articledata)=>articledata.title==="Shimla").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostfour} />
             </Link>
              )}
-             {articledata.filter((articledata)=>articledata.title=="Goa").map((dataid)=>
+             {articledata.filter((articledata)=>articledata.title==="Goa").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={tourismtoppostfive} />
             </Link>
@@ -109,27 +109,27 @@ const Tourism = () => {
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KERALA").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticleone} />
           </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="KODAIKANAL").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KODAIKANAL").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticletwo} />
           </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="Jammu And Kashmir").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="Jammu And Kashmir").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlethree} />
           </Link>
           )}
-           {articledata.filter((articledata)=>articledata.title=="Shimla").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="Shimla").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlefour} />
           </Link>
            )}
-            {articledata.filter((articledata)=>articledata.title=="Goa").map((dataid)=>
+            {articledata.filter((articledata)=>articledata.title==="Goa").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={tourismlatestarticlefive} />
           </Link>

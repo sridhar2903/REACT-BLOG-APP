@@ -102,7 +102,7 @@ let {datamap}=useParams();
 
         {/* FIRST -CHILD -FOOTER */}
         <div className='footer-parent-more-siren'>
-        {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=> 
+        {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=> 
         <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
@@ -132,7 +132,7 @@ let {datamap}=useParams();
         )}
 
           {/* SECOND -CHILD -FOOTER */}
-          {articledata.filter((articledata) => articledata.title == "RRR").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "RRR").map((dataid) =>
           <Link to={"/articles/" + dataid.id} style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>
@@ -166,7 +166,7 @@ let {datamap}=useParams();
 
 
           {/* THIRD CHILD FOOTER */}
-          {articledata.filter((articledata) => articledata.title == "Paneer Butter Masala").map((dataid) =>
+          {articledata.filter((articledata) => articledata.title === "Paneer Butter Masala").map((dataid) =>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
 
           <div className='child-footer'>

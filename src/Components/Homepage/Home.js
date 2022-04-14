@@ -78,7 +78,7 @@ const Home = () => {
           
           <div id="one-img">
 
-          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KERALA").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <div className="center-one-img">
               Kerala : God's Own Country
@@ -95,7 +95,7 @@ const Home = () => {
 
          
           <div id="two-img">
-          {articledata.filter((articledata)=>articledata.title=="SPRINT").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="SPRINT").map((dataid)=>
           <Link to={"/articles/" + dataid.id }style={{ textDecoration: 'none',color:'black' }}>
                 <div style={{fontFamily:'Montserrat, sans-serif',fontWeight:'bold',fontSize:'20px',textAlign:'center',paddingTop:'5em',color:'white'}}>Fitness</div>
             </Link>
@@ -103,7 +103,7 @@ const Home = () => {
           </div>
 
           <div id="three-img">
-          {articledata.filter((articledata)=>articledata.title=="ARTIFICIAL INTELLIGENCE").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="ARTIFICIAL INTELLIGENCE").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <div style={{fontFamily:'Montserrat, sans-serif',fontWeight:'bold',fontSize:'20px',textAlign:'center',paddingTop:'5em',color:'whitesmoke'}}>Technology</div>
             </Link>
@@ -124,17 +124,17 @@ const Home = () => {
 
         <div className='flexlatest'>
 
-        {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
          <Link to={"/articles/" + dataid.id }  style={{ textDecoration: 'none',color:'black' }}>
            <Latesthome datalatest={latestone} />
            </Link> 
         )}
-        {articledata.filter((articledata)=>articledata.title=="RRR").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="RRR").map((dataid)=>
            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latesttwo} />
           </Link>
         )}
-        {articledata.filter((articledata)=>articledata.title=="Paneer Butter Masala").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="Paneer Butter Masala").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latestthree} />
           </Link>
@@ -167,28 +167,28 @@ const Home = () => {
 
           <div>
 
-          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KERALA").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsone} />
             </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailstwo} />
             </Link>
           )}
             
-            {articledata.filter((articledata)=>articledata.title=="RADHESHYAM").map((dataid)=>
+            {articledata.filter((articledata)=>articledata.title==="RADHESHYAM").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsthree} />
             </Link>
             )}
-          {articledata.filter((articledata)=>articledata.title=="CYBER SECURITY").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="CYBER SECURITY").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfour} />
             </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="Paneer Butter Masala").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="Paneer Butter Masala").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={toppostsdetailsfive} />
             </Link>
@@ -202,27 +202,27 @@ const Home = () => {
         {/* LATEST ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          {articledata.filter((articledata)=>articledata.title=="KERALA").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="KERALA").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticleone} />
           </Link>
           )}
-         {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+         {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticletwo} />
           </Link>
          )}
-         {articledata.filter((articledata)=>articledata.title=="RADHESHYAM").map((dataid)=>
+         {articledata.filter((articledata)=>articledata.title==="RADHESHYAM").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlethree} />
           </Link>
          )}
-         {articledata.filter((articledata)=>articledata.title=="CYBER SECURITY").map((dataid)=>
+         {articledata.filter((articledata)=>articledata.title==="CYBER SECURITY").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefour} />
           </Link>
          )}
-         {articledata.filter((articledata)=>articledata.title=="Paneer Butter Masala").map((dataid)=>
+         {articledata.filter((articledata)=>articledata.title==="Paneer Butter Masala").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={latestarticlefive} />
           </Link>
@@ -259,17 +259,17 @@ const Home = () => {
         <br />
 
         <div className='flexlateststories'>
-        {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
         <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
            <Latesthome datalatest={latestone} />
            </Link>
         )}
-        {articledata.filter((articledata)=>articledata.title=="RRR").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="RRR").map((dataid)=>
            <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latesttwo} />
           </Link>
         )}
-        {articledata.filter((articledata)=>articledata.title=="Paneer Butter Masala").map((dataid)=>
+        {articledata.filter((articledata)=>articledata.title==="Paneer Butter Masala").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <Latesthome datalatest={latestthree} />
           </Link>

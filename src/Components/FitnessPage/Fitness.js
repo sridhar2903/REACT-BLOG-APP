@@ -76,27 +76,27 @@ const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
 
           <div>
 
-          {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostone} />
             </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="FLEXIBILITY").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="FLEXIBILITY").map((dataid)=>
             <Link to={"/articles/" + dataid.id }  style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstopposttwo} />
             </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="SPRINT").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="SPRINT").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostthree} />
             </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="MUSCULAR STRENGTH").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="MUSCULAR STRENGTH").map((dataid)=>
             <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostfour} />
             </Link>
           )}
-           {articledata.filter((articledata)=>articledata.title=="BALANCE").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="BALANCE").map((dataid)=>
             <Link to={"/articles/" + dataid.id }style={{ textDecoration: 'none',color:'black' }}>
             <TopPostsDetails datapost={fitnesstoppostfive} />
             </Link>
@@ -110,27 +110,27 @@ const filterlone=fitnessdata.filter((fitnessdata)=>fitnessdata.id==="1")
         {/* TOURISM ARTICLES -INFO -SECTION */}
         <div >
           <br />
-          {articledata.filter((articledata)=>articledata.title=="AEROBIC").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="AEROBIC").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestone} />
           </Link>
           )}
-          {articledata.filter((articledata)=>articledata.title=="FLEXIBILITY").map((dataid)=>
+          {articledata.filter((articledata)=>articledata.title==="FLEXIBILITY").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatesttwo} />
           </Link>
           )}
-           {articledata.filter((articledata)=>articledata.title=="SPRINT").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="SPRINT").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestthree} />
           </Link>
            )}
-           {articledata.filter((articledata)=>articledata.title=="MUSCULAR STRENGTH").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="MUSCULAR STRENGTH").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestfour} />
           </Link>
            )}
-           {articledata.filter((articledata)=>articledata.title=="BALANCE").map((dataid)=>
+           {articledata.filter((articledata)=>articledata.title==="BALANCE").map((dataid)=>
           <Link to={"/articles/" + dataid.id } style={{ textDecoration: 'none',color:'black' }}>
           <LatestArticle dataarticle={fitnesslatestfive} />
           </Link>
