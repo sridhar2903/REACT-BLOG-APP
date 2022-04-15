@@ -1,11 +1,12 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 export const Fitnesscontext = createContext();
 export const FitnessProvider=(props)=>
 {
     
 // OBJECTS RELATED TO TOP POST DETAILS IN FITNESS PAGE
 
-const fitnessdata= [
+const [fitnessdata]= useState(
+[
   {
     id:"1",
     img: <img src="https://media.istockphoto.com/photos/unrecognizable-sportswoman-jumping-rope-on-a-bridge-picture-id1128646064?b=1&k=20&m=1128646064&s=170667a&w=0&h=laGklQ5LOZMQXFr_ydlDQqK5yRAerjh6AtC3fsaZZ8w=" id='imgpost' alt='notfound' />,
@@ -91,7 +92,7 @@ const fitnessdata= [
   
   }
 ]
-
+)
   return(
     <Fitnesscontext.Provider value={[fitnessdata]}>
         {props.children}

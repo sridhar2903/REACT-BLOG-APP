@@ -1,11 +1,11 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 export const Tollywoodcontext = createContext();
 export const TollywoodProvider=(props)=>
 {
     
 // OBJECTS RELATED TO TOP POST DETAILS IN TOLLYWOOD PAGE
 
-const tollywooddata = 
+const [tollywooddata] = useState(
 [
   {
     id:"1",
@@ -92,6 +92,7 @@ const tollywooddata =
   
   }
 ]
+)
 
   return(
     <Tollywoodcontext.Provider value={[tollywooddata]}>

@@ -1,11 +1,11 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 export const Foodcontext = createContext();
 export const FoodProvider=(props)=>
 {
     
  // OBJECTS RELATED TO TOP POST DETAILS IN FOOD PAGE
 
- const fooddata = 
+ const [fooddata] = useState(
  [
    {
     id:"1",
@@ -92,6 +92,7 @@ export const FoodProvider=(props)=>
   
   }
 ]
+ )
 
 
   return(

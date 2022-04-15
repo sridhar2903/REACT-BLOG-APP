@@ -1,11 +1,12 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 import kerala from '../Homepage/imagesforHome/kerala.jpg'
 export const Tourismcontext = createContext();
 export const TourismProvider=(props)=>
 {
     // OBJECTS RELATED TO TOP POST DETAILS IN TOURISM PAGE
 
-const tourismdata=[
+const [tourismdata]=useState(
+[
   {
     id:"1",
     img: <img src= {kerala} id='imgpost' alt='notfound' />,
@@ -91,6 +92,7 @@ const tourismdata=[
   
   }
 ]
+)
   return(
     <Tourismcontext.Provider value={[tourismdata]}>
         {props.children}

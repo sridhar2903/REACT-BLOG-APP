@@ -1,9 +1,10 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 
 export const ArticleContext = createContext();
 
 const ArticleContextProvider = (props) => {
-    const articledata = [
+    const [articledata] = useState(
+    [
 
         {
             id: "1",
@@ -242,6 +243,7 @@ const ArticleContextProvider = (props) => {
 
 
     ]
+    )
 
     return (
         <>

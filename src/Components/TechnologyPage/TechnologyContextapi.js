@@ -1,11 +1,12 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 export const Technologycontext = createContext();
 export const TechnologyProvider=(props)=>
 {
     
 // OBJECTS RELATED TO TOP POST DETAILS IN TECHNOLOGY PAGE
 
-const technologydata = [
+const [technologydata] =useState(
+ [
   {
     id:"1",
     img: <img src="https://www.financialexpress.com/wp-content/uploads/2021/08/cyber-security.jpg" id='imgpost' alt='notfound' />,
@@ -91,6 +92,7 @@ const technologydata = [
   
   }
 ]
+)
   return(
     <Technologycontext.Provider value={[ technologydata]}>
         {props.children}

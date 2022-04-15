@@ -1,4 +1,4 @@
-import React, {createContext } from "react";
+import React, {createContext, useState } from "react";
 import kerala from './imagesforHome/kerala.jpg'
 
 export const Homecontext = createContext();
@@ -7,7 +7,7 @@ export const HomeProvider=(props)=>
 {
     // OBJECTS RELATED TO LATEST IN HOME PAGE
 
-    const homedata=
+    const [homedata]=useState(
       [
          {
            id:"1",
@@ -125,6 +125,7 @@ export const HomeProvider=(props)=>
         }
       
       ]
+    )
     
 
 

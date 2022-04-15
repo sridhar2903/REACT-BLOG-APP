@@ -6,7 +6,7 @@ import share from './imagesarticles/share.jpg'
 import { Link, useParams } from 'react-router-dom'
 import { ArticleContext } from './ArticleContext'
 
-// import './stylehome.css'
+
 const Article = () => {
 
 const[articledata]=useContext(ArticleContext);
