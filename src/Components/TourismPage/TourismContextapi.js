@@ -1,5 +1,5 @@
 import React, {createContext, useState } from "react";
-import kerala from '../Homepage/imagesforHome/kerala.jpg'
+
 export const Tourismcontext = createContext();
 export const TourismProvider=(props)=>
 {
