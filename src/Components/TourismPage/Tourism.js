@@ -13,6 +13,7 @@ import { ArticleContext } from '../ArticlesAll/ArticleContext.js'
 const Tourism = () => {
 
   let [tourismdata]=useContext(Tourismcontext);
+
   let [articledata]=useContext(ArticleContext);
 
   const filterlone=tourismdata.filter((tourismdata)=>tourismdata.id==="1")

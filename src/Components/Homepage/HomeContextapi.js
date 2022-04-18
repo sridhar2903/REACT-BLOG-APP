@@ -1,11 +1,22 @@
 import React, {createContext, useState } from "react";
 
 
+
 export const Homecontext = createContext();
 
 export const HomeProvider=(props)=>
 {
-    // OBJECTS RELATED TO LATEST IN HOME PAGE
+ 
+  //   const [data,setData]=useState([]);
+
+  // useEffect(()=>{
+  //   axios.get("https://blog-app-backend-test.herokuapp.com/api/v1/home").then((res)=>
+  //       setData(res.data)
+  //   )
+    
+  //   })
+  
+
 
     const [homedata]=useState(
       [
