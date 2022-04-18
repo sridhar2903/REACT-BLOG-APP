@@ -5,10 +5,11 @@ const TopPostsDetails = ({datapost}) => {
     <>
         <div id='container-posts'>
              <div id="img-container-posts">
-                 {datapost.img}
+             <img src= {datapost.img} className='imgpost' alt='notfound' />
                  </div>
-                 <div id="title-container-posts">
+                 <div id="title-container-posts" style={{fontWeight:"bolder"}}>
                      {datapost.titletext}
+                     <br/>
                          {datapost.maintitle}
                          </div> 
      

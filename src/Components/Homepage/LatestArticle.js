@@ -11,14 +11,14 @@ const LatestArticle = ({ dataarticle }) => {
             <div id='container-latest-article'>
                 <div>
 
-                    {dataarticle.img}
+                <img src= {dataarticle.img}  className='imglatest' alt='notfound' />
                 </div>
                 <div id="title-latest-article">
-                    <div id="title-latest-one">{dataarticle.title}</div>
+                    <div className="title-latest-one" style={{fontWeight:"bolder"}}>{dataarticle.title}</div>
+                    <br/>
+                    <div className="title-latest-two">  {dataarticle.info}</div>
 
-                    <div id="title-latest-two">  {dataarticle.info}</div>
-
-                    <div id="title-latest-three">{dataarticle.moreinfo}</div>
+                    <div className="title-latest-three" style={{fontWeight:"bolder"}}>{dataarticle.moreinfo}</div>
 
             </div>
             </div>

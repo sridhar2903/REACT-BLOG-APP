@@ -14,7 +14,14 @@
     float: right;
     position: relative;
     bottom: 23em;
-    margin-bottom: -20em;
+    
+    height: 500px;
+    width: 400px;
+    border: 2px solid black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11em ;
 }
 
 

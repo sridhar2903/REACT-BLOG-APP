@@ -91,20 +91,6 @@ font-weight: bolder;
     border-radius: 10px;
 }
 
-#rrr
-{
-   
-    height: 230px;
-    width: 400px; 
-    border-radius: 10px;
-}
-
-#ptikka
-{
-    height: 230px;
-    width: 400px; 
-    border-radius: 10px;
-}
 
 #title-section-home
 {
@@ -122,26 +108,18 @@ font-weight: bolder;
 
 }
 
-#subinfo-section-home
+.subinfo-section-home
 {
     font-size: 13px;
     padding-top: 10px;
     font-family: 'Montserrat', sans-serif;
 
 }
-#sub-one
-{
-    padding-top: 38px;
-}
-#sub-two
+.sub-one
 {
     padding-top: 38px;
 }
 
-#sub-three
-{
-   padding-top: 38px;
-}
 
 .latestarticle-home-title
 {
@@ -154,7 +132,7 @@ font-weight: bolder;
 }
 
 
-#imgpost
+.imgpost
 {
     height: 160px;
     width: 200px;
@@ -191,31 +169,36 @@ font-weight: bolder;
 {
     display: flex;
     gap: 10px;
+   
     
 }
 
-#imglatest
+.imglatest
 {
     width: 350px;
     height: 250px;
 }
 
-#title-latest-one
+.title-latest-one
 {
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
 }
 
-#title-latest-two
+.title-latest-two
 {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     padding-top: 0.2em;
+      text-align: left;
+    padding-right: 30px;
+   
+
     
     
 
 }
-#title-latest-three
+.title-latest-three
 {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -224,8 +207,14 @@ font-weight: bolder;
 
 
 /*ADVERTISEMENT  */
-#adv
+
+
+.floatadv-home
 {
+    float: right;
+    position: relative;
+    bottom: 23em;
+    
     height: 500px;
     width: 400px;
     border: 2px solid black;
@@ -233,13 +222,11 @@ font-weight: bolder;
     text-align: center;
     box-sizing: border-box;
     padding-top: 11em ;
-}
+     
 
-.floatadv-home
-{
-    float: right;
-    position: relative;
-    bottom: 23em;
+
+
+   
 }
 
 .flexlateststories
