@@ -6,7 +6,7 @@ const Latesthome = ({datalatest}) => {
       <div id="latesthome">
           
     <div id="img-section-home">
-      <img src={datalatest.image} id='aerobic' alt='notfound' />,
+      <img src={datalatest.image} id='aerobic' alt='notfound' />
     </div>
     <div id="title-section-home">
     {datalatest.title}

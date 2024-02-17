@@ -21,6 +21,7 @@ const Home = () => {
   
    const [homedata ]=useContext(Homecontext)
    const[articledata]=useContext(ArticleContext)
+   console.log(articledata);
     
 
   
